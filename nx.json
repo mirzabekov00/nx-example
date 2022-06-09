@@ -15,12 +15,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MmI5YThmZjctYTVjNi00Y2M3LWJlYTAtNWZmMGVjNjc2NWZkfHJlYWQtd3JpdGU="
       }
     }
@@ -33,5 +28,18 @@
       }
     ]
   },
-  "defaultProject": "todos"
+  "defaultProject": "blog",
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "less",
+        "linter": "eslint"
+      }
+    }
+  }
 }

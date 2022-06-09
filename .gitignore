@@ -98,5 +98,3 @@ buck-out/
 /ios/Pods/
 /vendor/bundle/
 /
-
-apps/todos-e2e/artifacts
