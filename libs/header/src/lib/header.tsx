@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export interface HeaderProps {}
 
 const StyledHeader = styled.div`
-  color: pink;
+  color: red;
 `;
 
 export function Header(props: HeaderProps) {
